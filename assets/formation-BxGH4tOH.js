@@ -1,1 +1,0 @@
-const i={name:"Formación",level:{mecu:"Marco Español de Cualificaciones",isced:"Clasificación Internacional Normalizada de la Educación"},smix:{title:"Sistemas Microinformáticos y Redes",description:""},dam:{title:"Desarrollo de Aplicaciones Multiplataforma",description:""},comp:{title:"Ingeniería Informática",description:""}},a={formation:i};export{a as default,i as formation};

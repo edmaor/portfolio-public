@@ -1,0 +1,1 @@
+const o={page:{about:"@:about.name",resume:"Currículum",portfolio:"Porfolio"},formation:"Formación",work:"Experiencia Laboral",projects:"Proyectos",skills:"Habilidades",state:{ongoing:"Actualmente"},scroll:"Bajar"},a={common:o};export{o as common,a as default};
