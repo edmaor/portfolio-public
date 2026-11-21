@@ -1,0 +1,33 @@
+<!--
+  Favicon: the brand mark, white on an ink square.
+
+  Three decisions here, all forced by what a 16px favicon actually is.
+
+  Square, not rounded. The mark is rasterised through a thumbnailer that
+  composites onto white, so rounded corners came back as opaque white pixels
+  rather than as transparency. A square tile has no corners to lose, and every
+  platform that wants the icon rounded (iOS, Android, macOS) applies its own
+  mask anyway.
+
+  Full bleed. The glyph is set to within a few units of the tile edge. Inset
+  inside its own padding the mark reads as a smudge at favicon size; the tile
+  is not the logo, the letter is, so the letter gets the room.
+
+  Ink tile, white glyph. A tab strip can be light or dark and the icon cannot
+  ask which. On a light strip the ink square reads as a solid block; on a dark
+  strip the square recedes and the white glyph carries it. Either way something
+  with real contrast is on screen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#181818" />
+  <g transform="translate(60 60) scale(1.16) translate(-60 -59.5)">
+    <g fill="none" stroke="#ffffff" stroke-width="13">
+      <path d="M38.5 50.5V99.5" />
+      <path d="M32 50.5H88" />
+      <path d="M32 75H78" />
+      <path d="M32 99.5H88" />
+    </g>
+    <path d="M36 28C42 16 54 16 60 25C66 34 78 34 84 21" fill="none" stroke="#ffffff"
+      stroke-width="12" stroke-linecap="round" />
+  </g>
+</svg>

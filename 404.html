@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting — Edu Martorell</title>
+    <script>
+      // GitHub Pages serves this file for any path it cannot resolve to a real
+      // file. Under history routing that is how the app has to be reached, since
+      // Pages has no rewrite rules of its own.
+      //
+      // The site's real routes are built as real files (see staticRoutes in
+      // vite.config.ts), so anything reaching this page is a path that does not
+      // exist: send the visitor to the root and let the app render, rather than
+      // restoring a URL there is nothing behind. Query and fragment are carried
+      // across so section links (/#work) and campaign parameters survive the
+      // bounce. replace() rather than assign() keeps the dead URL out of session
+      // history, so Back goes where the visitor came from instead of bouncing
+      // through here again.
+      location.replace('/' + location.search + location.hash)
+    </script>
+    <meta http-equiv="refresh" content="0; url=/" />
+  </head>
+  <body style="background:#181818;color:#e5e7eb;font-family:system-ui,sans-serif">
+    <p style="padding:2rem">
+      Page not found. <a style="color:#60a5fa" href="/">Go to the home page</a>.
+    </p>
+  </body>
+</html>
